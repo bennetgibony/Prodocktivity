@@ -1,0 +1,4 @@
+Contact: mailto:prodocktivity@bennet-gibony.com
+Expires: 2027-10-31T00:00:00.000Z
+Preferred-Languages: en, de
+Canonical: https://prodocktivity.bennet-gibony.com/.well-known/security.txt

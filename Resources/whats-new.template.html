@@ -1,0 +1,156 @@
+<title>What's new in proDOCKtivity</title>
+<style>
+:root {
+  --bg: #F7F5F2; --card: #FFFFFF; --ink: #171513; --muted: #55504A; --line: #E8E4DE;
+  --accent: #5551D8; --accent-soft: #E8EBFD;
+  --font: -apple-system, "SF Pro Text", system-ui, sans-serif;
+  --display: -apple-system, "SF Pro Display", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131315; --card: #1C1C20; --ink: #EDECEF; --muted: #A8A6AF; --line: #2B2B31;
+  --accent: #8E8CF7; --accent-soft: #2E2E42; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131315; --card: #1C1C20; --ink: #EDECEF; --muted: #A8A6AF; --line: #2B2B31;
+  --accent: #8E8CF7; --accent-soft: #2E2E42; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.6; margin: 0 }
+.wrap { max-width: 720px; margin: 0 auto; padding-inline: 18px; padding-block: 36px 64px; display: grid; gap: 22px }
+h1, h2 { font-family: var(--display); margin: 0; text-wrap: balance }
+h1 { font-size: clamp(28px, 6vw, 36px); font-weight: 700; letter-spacing: -0.4px }
+h2 { font-size: 18px; font-weight: 600 }
+p { margin: 0 }
+.muted { color: var(--muted) }
+header { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center }
+header img { width: 72px; height: 72px }
+.cards { display: grid; gap: 12px }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: grid; gap: 6px }
+.card ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+.tag { justify-self: start; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border-radius: 99px; padding: 2px 10px }
+.ui { font-weight: 600 }
+kbd { font-family: var(--font); font-size: 14px; background: var(--accent-soft); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 7px; white-space: nowrap }
+</style>
+
+<div class="wrap">
+  <header>
+    <img src="__ICON__" alt="proDOCKtivity icon">
+    <div>
+      <h1>What's new</h1>
+      <p class="muted">Everything that changed since proDOCKtivity stopped depending on Arc. One page, two minutes.</p>
+    </div>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <span class="tag">New</span>
+      <h2>Tidy workspaces, one look, easy setup</h2>
+      <ul>
+        <li><b>Show All Workspaces</b> (<kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>W</kbd>, also in DOCKlight and the ⋯ menu): every workspace as a card side by side. Drag pins, tabs and apps from one card to another to tidy up.</li>
+        <li><b>Open apps per workspace</b>: Settings → <span class="ui">General → Open apps</span>. Either open apps show in every workspace (as before), or only in the workspace you opened them in; then the workspace lists its apps and tabs together.</li>
+        <li><b>One look</b>: Favorites sit on a square in the workspace's accent, folders are in the accent, and the dot beside running apps is gone. The address row is in the accent too, and while another app (Claude, Mail …) is in front it shows that app with an outline instead of the browser's address.</li>
+        <li><b>Icons you pick</b>: right-click a workspace → <span class="ui">Change Icon…</span> for emoji (search by name) or symbols, no more pasting. With many workspaces the icons at the bottom get smaller, 7 to a row, then a second row.</li>
+        <li><b>Split and freeze, clearly apart</b>: a split (<kbd>⌥</kbd>-click) ends as soon as you pick another tab or app, and only that one shows. To keep one thing on a half while you switch the other, <kbd>⌃</kbd>-click it: it's frozen on the left half (<kbd>⌃</kbd>-click again to release). Right-click still opens the menu.</li>
+        <li><b>Fixes</b>: ⌥-clicking an app for split screen no longer waits for a busy app (a busy app could take seconds), and works with the built-in browser in front (browser left, app right). After typing in the bar's address field, the keyboard goes back to the page, so typing there no longer beeps.</li>
+        <li><b>Settings, sorted</b>: nine tabs, one subject each: General, Appearance, Workspaces, Bar &amp; Docks, Windows, Browser, Auto-Quit, Shortcuts (every shortcut in one list) and Data. New under Windows: where each app's windows go, all in one list. The Setup Guide is updated to match.</li>
+        <li><b>Auto-Quit rules per area</b>: Settings → <span class="ui">Auto-Quit</span> now has a rule for open apps and tabs, one for Favorites (apps, and whether their websites' tabs close) and one for each workspace (its apps and its tabs), like Quitter. App and website exceptions still win.</li>
+        <li><b>⌘Y brings things back</b>: in the bar or the browser, <kbd>⌘</kbd> <kbd>Y</kbd> reopens the last tab you closed (also in Arc or Chrome) or the last app that quit, newest first, again and again. From any other app: <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>Y</kbd>. <kbd>⌘</kbd> <kbd>Z</kbd> is always the normal Undo. Deleting a workspace or a profile no longer asks first: a note at the bottom offers Undo (⌘Y works too).</li>
+        <li><b>Website icons</b> for smaller sites too: when Google's icon service doesn't know a site, the site's own icon is used; a site without any shows its first letter.</li>
+        <li><b>Setup tour</b>: on the first start, set everything up in about a minute: a quick recommended setup, a few questions step by step, or a setup file. Again any time from the ⋯ menu.</li>
+        <li><b>Setup files</b>: <i>setupNA</i> (settings, workspaces and websites, no apps) is saved by itself after every change; <i>setupWA</i> also holds your apps and their rules. Save or load them under Settings → <span class="ui">Data → Setup file</span>, to set up another Mac in one go.</li>
+        <li><b>Updates inside the app</b>: when a new version is out, a card at the bottom of the bar offers to update; proDOCKtivity restarts by itself.</li>
+        <li><b>DOCKlight</b> finds newly installed apps right away, and no longer lists app-internal files (like Zotero's scripts) while you type a search. Feedback emails go to prodocktivity@bennet-gibony.com.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">Earlier</span>
+      <h2>A new look, and macOS 27</h2>
+      <ul>
+        <li><b>Needs macOS 27.</b> This version no longer runs on older Macs; keep the previous version there.</li>
+        <li><b>Warm and calm</b>: a warm off-white background, white cards with soft shadows, gentle rounding and one accent color. Nothing moves for longer than a blink.</li>
+        <li><b>Colors per workspace</b>: each workspace gets one of 18 colors for the bar and frame, and one of 16 accents for selection and switches. Pick them from a grid under Settings → <span class="ui">Appearance</span>, or by right-clicking a workspace.</li>
+        <li><b>Easier to read</b>: Settings → <span class="ui">Appearance</span> has text size (Small, Default, Large, Extra large), a reading font (Sans or Serif) for longer text like your idea notes, density, and Light, Dark or System.</li>
+        <li><b>DOCKlight</b> (<kbd>⌥</kbd> <kbd>Space</kbd>) is a proper command palette: one field, results with what they are, shortcuts on the right.</li>
+        <li><b>Paste</b>: <kbd>⌘V</kbd> pastes without formatting, <kbd>⇧⌘V</kbd> with formatting, also in the bar and DOCKlight.</li>
+        <li><b>Settings</b> has tabs in its toolbar and opens where you left it. The new <span class="ui">Data</span> tab says where your data lives and what leaves your Mac, makes a backup every day (kept 14 days) and exports everything to a folder (JSON, plus your pins as a CSV table).</li>
+        <li><b>Never lose a thought</b>: an unsaved idea note stays when you close the window; errors (like an extension that won't install) show right where they happened, with Retry.</li>
+        <li><b>Getting started</b>: new users get four small tasks in the bar that tick themselves off, instead of an intro to click through. The bar also comes back hidden if you left it hidden.</li>
+        <li>Times are always 24-hour and weeks start on Monday. A new app icon and a simpler menu bar icon.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag">Earlier</span>
+      <h2>Calmer, smoother, quicker</h2>
+      <ul>
+        <li><b>Incognito tabs</b>: <kbd>⌘⇧N</kbd> (or File → New Incognito Tab, or right-click “New Tab” in the bar) opens a private tab in your current workspace, marked with a mask. Its logins and cookies live in memory only and disappear when the last private tab closes. Private tabs are never saved, can't be reopened with <kbd>⌘⇧T</kbd>, and extensions stay out of them.</li>
+        <li><b>Second monitor</b>: Settings → <span class="ui">Browser → Browser window on</span> lets the bar stay on one screen while the browser fills the other (“The other screen”, or pick a screen by name). If that screen isn't connected, the browser sits beside the bar as before. With a second screen, the workspace-colored frame now shows there too (no bar on that screen); the browser fills the inside. Turn it off under Settings → <span class="ui">General → Frame on the other screens too</span>.</li>
+        <li><b>Bitwarden and other extensions</b>: the Bitwarden Safari extension works in the built-in browser (also its <kbd>⌘⇧L</kbd> fill shortcut and right-click entries). Extension keyboard shortcuts and right-click entries now work in general. Unlocking Bitwarden through its desktop app or Touch ID is switched off here (it kept bringing up Touch ID prompts and used CPU); log in with your master password.</li>
+        <li><b>A calmer bar</b>: one flat list on your workspace's color instead of boxes in boxes; the current tab is a soft pill that glides from row to row; tabs slide in and out.</li>
+        <li><b>Browser shortcuts</b>: <kbd>⌘⇧T</kbd> reopens a closed tab, <kbd>⌃Tab</kbd> / <kbd>⌃⇧Tab</kbd> (or <kbd>⌘⌥→</kbd> / <kbd>⌘⌥←</kbd>) switch tabs, <kbd>⌘1</kbd>…<kbd>⌘9</kbd> jump to a tab, <kbd>⌘⌥C</kbd> copies the page's address, <kbd>⌘,</kbd> opens Settings. They work in the browser window and right after a click into the bar. A middle click opens a link in the background.</li>
+        <li><b>Your search engine</b>: Google, DuckDuckGo, Ecosia, Bing or Startpage, under Settings → <span class="ui">Browser</span>. Typing <i>localhost:3000</i>, an IP address or <i>nas.local</i> opens it instead of searching.</li>
+        <li><b>Each site keeps its zoom</b> (<kbd>⌘+</kbd> / <kbd>⌘−</kbd>). Crashed pages reload by themselves, page dialogs no longer freeze the app, and sites behind a login prompt ask for it.</li>
+        <li><b>DOCKlight</b> is only as tall as its results, finds Safari, and follows the mouse.</li>
+        <li><b>Safer and lighter under the hood</b>: a damaged data file is kept aside instead of being overwritten; importing from Arc again no longer duplicates folders; the quitter leaves apps alone that are in a call, playing music or exporting; a frozen app that quits ends the freeze; when memory is short, tabs you aren't looking at release their page; fewer wake-ups for a longer battery life; pages that can't load say why.</li>
+        <li>Finished downloads bounce the Dock's Downloads stack; the files dock stays fast with cloud-synced folders; less work in the background.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">New</span>
+      <h2>One window, like Arc</h2>
+      <ul>
+        <li><b>The frame</b>: your workspace's color behind everything, a thin frame around the bar and your windows, all in one piece. Every window snaps inside. No frame where a second monitor continues. Settings → <span class="ui">Appearance → Frame</span> (width, on/off, below or behind the menu bar).</li>
+        <li><b>Calmer browser</b>: the window is just the page. The address (type right in it), back, forward and reload sit at the top of the bar; the window buttons sit in a small notch in the page's corner. All the usual shortcuts work (⌘C, ⌘V, ⌘A, ⌘Z, ⌘F, ⌘W, ⌘T, ⌘L, ⌘R, ⌘+/−). Swiping between workspaces follows your fingers (reversible in Settings).</li>
+        <li><b>Two tabs side by side</b>: <kbd>⌥</kbd>-click a tab while the browser is in front.</li>
+        <li><b>Extensions</b> in the built-in browser: uBlock Origin Lite with one click, the Zotero Connector, or extensions from Chrome and Arc. Settings → <span class="ui">Browser → Extensions</span>; their buttons sit behind the puzzle piece in the bar. Apple Passwords can't autofill here; copy from the Passwords app and paste with ⌘V.</li>
+        <li><b>Favorites</b> stay three in a row even in a narrow bar (down to 170 px); the tiles just get smaller.</li>
+        <li><b>Docks</b>: websites in a second bar of their own, and a files dock with your chosen folders (left or right), under Settings → <span class="ui">Appearance → Docks</span>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">Biggest change</span>
+      <h2>Its own browser, no Arc needed</h2>
+      <ul>
+        <li>Websites open in proDOCKtivity's own browser window, right next to the bar. Each workspace keeps its own tabs.</li>
+        <li><b>Profiles</b>: logins are stored per profile, and workspaces can share one (e.g. “Private” for Uni and Free time, “Work” just for Work). Right-click a workspace icon → <span class="ui">Profile</span>.</li>
+        <li>Can be your <b>default browser</b>: links from Mail, Slack, WhatsApp … then open as a tab in your current workspace. Settings → <span class="ui">Browser</span>.</li>
+        <li>Still prefer Chrome (for extensions like Claude in Chrome) or Arc? Pick it under Settings → <span class="ui">Browser</span>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">Windows</span>
+      <h2>Halves, freezing and rules</h2>
+      <ul>
+        <li><b>Freeze</b>: right-click an app or website → <span class="ui">Freeze on the Left/Right</span>. It stays there; everything you open next goes to the other half. Great for a calendar or notes on one side.</li>
+        <li><b>Rules for new windows</b>: right-click an app → <span class="ui">New Windows</span> (right half, left half, small in the middle, don't snap). A new email in Mail lands on the right; Finder and Terminal open as they always did.</li>
+        <li><b>Choose the screen</b> for the bar: main screen, a specific one, or wherever the mouse is (Settings → General).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">At a glance</span>
+      <h2>Red dots for news</h2>
+      <p>Apps show a red dot when they have notifications (the same as the Dock badge, e.g. Slack), and websites when their title shows a number, like Gmail's “(3)”.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Tidy</span>
+      <h2>A simpler quitter</h2>
+      <p>Settings → <span class="ui">Auto-Quit</span>: one general time for apps you haven't used, and one for old tabs. Then exceptions: any installed app can stay open or get its own time, and websites like gmail.com can be kept forever.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Easier</span>
+      <h2>Clearer and smoother</h2>
+      <ul>
+        <li>Settings sorted into General, Appearance, Browser, Auto-Quit and Data; a small ⚙ button at the bottom left of the bar opens them, and the ⋯ button next to it holds workspaces, import and ideas. Arc-only options only show when you use Arc.</li>
+        <li>A “Getting started” list on first start (⋯ → <span class="ui">Show Getting Started</span>), a “Favorites” label on top and hints when you hover.</li>
+        <li>Apps open without the bar freezing, the browser scrolls and loads more smoothly, and the colored outline shows again where you just were.</li>
+        <li>Finder can be found in search, and clicking it always shows a Finder window.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="muted">Shortcuts you already know still work: <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>S</kbd> shows/hides the bar, <kbd>⌥</kbd> <kbd>Space</kbd> (or <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>Space</kbd>) opens DOCKlight, <kbd>⌘</kbd> <kbd>Space</kbd> stays Spotlight, <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>I</kbd> notes an idea. The full setup guide has the details.</p>
+</div>

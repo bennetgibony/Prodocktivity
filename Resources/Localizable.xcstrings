@@ -1,0 +1,498 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "A backdrop in the space's color behind everything; windows snap inside a thin frame next to the bar. Apps set to “Don't snap”, full-screen and fixed-size windows stay free. Frame width: Appearance tab.": {
+      "extractionState": "stale"
+    },
+    "A backdrop in the workspace's color behind everything; windows snap inside a thin frame next to the bar. Apps set to “Don't snap”, full-screen and fixed-size windows stay free.": {},
+    "A backdrop in the workspace's color behind everything; windows snap inside a thin frame next to the bar. Apps set to “Don't snap”, full-screen and fixed-size windows stay free. Frame width: Appearance tab.": {
+      "extractionState": "stale"
+    },
+    "A new folder with your data as JSON, your settings as a property list and all pins as a CSV table.": {},
+    "A setup file sets up proDOCKtivity on another Mac in one go. setupNA (your settings, spaces and websites, no apps) is saved by itself after every change; setupWA also holds your apps and their rules. Logins, open tabs and ideas are never in it.": {
+      "extractionState": "stale"
+    },
+    "A setup file sets up proDOCKtivity on another Mac in one go. setupNA (your settings, workspaces and websites, no apps) is saved by itself after every change; setupWA also holds your apps and their rules. Logins, open tabs and ideas are never in it.": {},
+    "A website here is never closed (or after its own time), wherever it's open. Covers its subdomains too.": {},
+    "A website here is never closed (or after its own time). Covers its subdomains too.": {
+      "extractionState": "stale"
+    },
+    "Accent": {},
+    "Add": {},
+    "Add App Exception…": {},
+    "Add App…": {},
+    "Add folders with +. Right-click a folder to choose whether it starts open.": {},
+    "Add from File…": {},
+    "Add to Files Dock": {},
+    "Add to Pinwall": {
+      "extractionState": "stale"
+    },
+    "Add website": {},
+    "Address in the menu bar instead of the bar": {},
+    "All Spaces": {
+      "extractionState": "stale"
+    },
+    "All Workspaces": {},
+    "All windows inside one proDOCKtivity window, in the workspace's color.": {},
+    "An app here follows its own rule, wherever it is.": {},
+    "Appearance": {
+      "extractionState": "stale"
+    },
+    "Apps": {},
+    "Apps hidden from the bar": {},
+    "Apps hidden from the sidebar": {
+      "extractionState": "stale"
+    },
+    "Apps that aren't pinned anywhere and tabs that are just open. Favorites and workspaces follow this unless they have their own rule below.": {},
+    "Arc": {},
+    "Ask me for feedback": {},
+    "At the top": {},
+    "Back": {},
+    "Back Up Now": {},
+    "Backups": {},
+    "Bar": {},
+    "Bar takes the current space's color": {
+      "extractionState": "stale"
+    },
+    "Bar takes the current workspace's color": {},
+    "Beside the bar (same screen)": {},
+    "Browser": {},
+    "Browser window on": {},
+    "Built-in (recommended): fast, separate logins per space": {
+      "extractionState": "stale"
+    },
+    "Built-in (recommended): fast, separate logins per workspace": {},
+    "Built-in: pins and tabs open in proDOCKtivity's own window, and every space keeps its own logins. Chrome: for extensions such as Claude in Chrome. Arc: as before.": {},
+    "Change Icon…": {},
+    "Check for Updates Now": {},
+    "Choose an icon": {},
+    "Chrome bookmarks": {},
+    "Close Getting started": {},
+    "Close tabs I haven't looked at for a while": {},
+    "Close; ⋯ → Show Getting Started brings it back": {},
+    "Close; ⚙ → Show Getting Started brings it back": {
+      "extractionState": "stale"
+    },
+    "Color": {},
+    "Color & Accent…": {},
+    "Color of the bar and frame": {},
+    "Color tone": {},
+    "Copy Link": {},
+    "Couldn't save. Your text is kept; try again.": {},
+    "Counts from the last time you used an app or looked at a tab. The app in front, Finder, apps in a call or playing something, and the tab you're on are never touched; quitting asks politely, so unsaved work still prompts. Pinned websites in a workspace are never closed. ⌘Y brings back what was closed.": {},
+    "Counts from the last time you used an app. The app in front and Finder are never touched; quitting asks politely, so unsaved work still prompts.": {
+      "extractionState": "stale"
+    },
+    "Crash reports": {},
+    "Current": {},
+    "Darker": {},
+    "Delete Folder and Contents…": {},
+    "Delete Space…": {
+      "extractionState": "stale"
+    },
+    "Delete Workspace": {},
+    "Delete Workspace…": {
+      "extractionState": "stale"
+    },
+    "Density": {},
+    "Dismiss": {},
+    "Docks": {},
+    "Done": {},
+    "Downloads": {},
+    "Downloads the official Safari build from github.com/uBlockOrigin/uBOL-home.": {},
+    "Drag apps or websites here": {},
+    "Drag pins, tabs and apps from one space to another.": {
+      "extractionState": "stale"
+    },
+    "Drag pins, tabs and apps from one workspace to another.": {},
+    "Drag to resize the bar": {},
+    "Each space has a color (the bar and the frame) and an accent (selection, focus, switches). New spaces get the next unused color.": {
+      "extractionState": "stale"
+    },
+    "Each workspace has a color (the bar and the frame) and an accent (selection, focus, switches). New workspaces get the next unused color.": {
+      "extractionState": "stale"
+    },
+    "Each workspace has an icon, a color (the bar and the frame) and an accent (its Favorites squares, folders, focus, switches). New workspaces get the next unused color. Rename or delete one: right-click its icon at the bottom of the bar (⌘Y brings a deleted one back).": {},
+    "Each workspace's color and accent: Workspaces tab.": {},
+    "Email Ideas to Bennet…": {},
+    "Empty": {},
+    "Every 3 days": {},
+    "Every day": {},
+    "Every few hours the app asks GitHub whether a newer version exists; GitHub sees your IP address, nothing else is sent.": {},
+    "Every other app fills the space next to the bar. “Don't snap” leaves an app's windows where they are.": {},
+    "Every week": {},
+    "Exceptions for apps": {},
+    "Exceptions for websites": {},
+    "Export": {},
+    "Export All Data…": {},
+    "Export Ideas File…": {},
+    "Extensions": {},
+    "Extensions need macOS 15.4 or newer.": {},
+    "Favorites": {},
+    "Feedback": {},
+    "Files dock": {},
+    "Folder": {},
+    "For new spaces, and wherever no space is open. Each space can have its own below.": {
+      "extractionState": "stale"
+    },
+    "For new workspaces, and wherever no workspace is open. Each workspace can have its own (Workspaces tab).": {},
+    "For new workspaces, and wherever no workspace is open. Each workspace can have its own below.": {
+      "extractionState": "stale"
+    },
+    "For running text, like your ideas notes. Labels stay in the system font.": {},
+    "Found on this Mac": {},
+    "Frame": {},
+    "Frame around everything": {},
+    "Frame on the other screens too": {},
+    "Frame: all windows inside one proDOCKtivity window": {
+      "extractionState": "stale"
+    },
+    "Frame: everything in one window, in the space's color": {
+      "extractionState": "stale"
+    },
+    "Frame: everything in one window, in the workspace's color": {},
+    "From Arc": {},
+    "From Arc (spaces, pins, folders, favorites)": {},
+    "From Chrome Bookmarks": {},
+    "From Safari Bookmarks": {},
+    "Frozen on one half: right-click → Release Freeze": {
+      "extractionState": "stale"
+    },
+    "Frozen on one half: ⌃-click or right-click → Release Freeze": {},
+    "General (": {
+      "extractionState": "stale"
+    },
+    "General quit time": {
+      "extractionState": "stale"
+    },
+    "General time for tabs": {
+      "extractionState": "stale"
+    },
+    "Get uBlock Origin Lite": {},
+    "Getting started": {},
+    "Google Chrome: for Chrome extensions": {},
+    "Help": {},
+    "Hide": {},
+    "Hide Sidebar  ⌃⌥S": {},
+    "Hide from Tab List (menu bar only)": {},
+    "Hide or quit apps I haven't used for a while": {},
+    "Hide the app": {
+      "extractionState": "stale"
+    },
+    "How much lighter or darker than the offered colors the bar and frame are, in every space. The middle is the color as offered.": {
+      "extractionState": "stale"
+    },
+    "How much lighter or darker than the offered colors the bar and frame are, in every workspace. The middle is the color as offered.": {},
+    "Icon": {},
+    "Icons for your Favorites": {},
+    "Icons for your pins": {
+      "extractionState": "stale"
+    },
+    "Ideas & Wishes": {},
+    "Import": {},
+    "In every space": {
+      "extractionState": "stale"
+    },
+    "In every workspace": {},
+    "Its look and contents: Appearance and Bar & Docks. Its workspaces: Workspaces.": {},
+    "Keep both (hide marker)": {},
+    "Keep in Workbench": {
+      "extractionState": "stale"
+    },
+    "Keep one on the left half (freeze)": {},
+    "Keep open": {},
+    "Last copy": {},
+    "Later": {},
+    "Lighter": {},
+    "Like open apps (": {},
+    "Like open tabs (": {},
+    "Links from other apps open in": {},
+    "Load Setup File…": {},
+    "Look": {},
+    "Main screen (with the menu bar)": {},
+    "Make proDOCKtivity the Default Browser": {},
+    "More: spaces, hide sidebar, import, ideas": {
+      "extractionState": "stale"
+    },
+    "More: workspaces, hide sidebar, import, ideas": {},
+    "More…": {},
+    "Move Down": {},
+    "Move Left": {},
+    "Move Right": {},
+    "Move Up": {},
+    "Move to Folder": {},
+    "Move to Space": {
+      "extractionState": "stale"
+    },
+    "Move to Trash": {},
+    "Move to Workspace": {},
+    "Needs Accessibility (System Settings → Privacy & Security). Single apps can go elsewhere: see below.": {},
+    "Never": {},
+    "Never close": {},
+    "New Folder…": {},
+    "New Idea…  ⌃⌥I": {},
+    "New Incognito Tab": {},
+    "New Profile…": {},
+    "New Space…": {
+      "extractionState": "stale"
+    },
+    "New Windows": {},
+    "New Workspace…": {},
+    "No other apps running": {},
+    "None": {},
+    "None (use the current one)": {},
+    "None yet. Add apps that should stay open, or need a different time wherever they are.": {},
+    "None yet. Add apps that should stay open, or need a different time.": {
+      "extractionState": "stale"
+    },
+    "None. Right-click an app in the bar → “Hide from Tab List” to keep it only in the menu bar.": {},
+    "None. Right-click an app in the sidebar → “Hide from Tab List” to keep it only in the menu bar.": {
+      "extractionState": "stale"
+    },
+    "Normally the address sits in the bar's top corner. With this on, while the frame reaches up behind the menu bar, it sits right after the menus instead. ⌘L jumps into it.": {},
+    "Normally the spaces follow your fingers, like swiping between desktops: two fingers to the left brings the next space in from the right. Turn this on for the other way round.": {
+      "extractionState": "stale"
+    },
+    "Nothing downloaded yet": {},
+    "Nothing goes to any analytics or AI service.": {},
+    "Nothing new found": {},
+    "Off: the bar and the frame stay in the neutral warm background.": {},
+    "One bar, or the bar for apps and Favorites plus a website dock next to it. The files dock shows the folders you pick, like a small Finder.": {},
+    "One bar, or the bar for apps and favorites plus a website dock next to it. The files dock shows the folders you pick, like a small Finder.": {
+      "extractionState": "stale"
+    },
+    "One bar, or the bar for apps and the Pinwall plus a website dock next to it. The files dock shows the folders you pick, like a small Finder.": {
+      "extractionState": "stale"
+    },
+    "Only extra windows": {},
+    "Only extra windows (e.g. a new email)": {},
+    "Only in the space they were opened in": {
+      "extractionState": "stale"
+    },
+    "Only in the workspace they were opened in": {},
+    "Only new windows": {
+      "extractionState": "stale"
+    },
+    "Open": {},
+    "Open Ideas File": {},
+    "Open Split View": {},
+    "Open Tabs": {},
+    "Open apps": {},
+    "Open apps and tabs": {},
+    "Open area": {
+      "extractionState": "stale"
+    },
+    "Open in Split Screen": {},
+    "Open websites in": {},
+    "Opens as a website": {},
+    "Opens the Mac's Emoji & Symbols viewer; the emoji you pick is used": {},
+    "Per space": {
+      "extractionState": "stale"
+    },
+    "Per workspace": {
+      "extractionState": "stale"
+    },
+    "Pick an icon from the set for any Favorite. Pins in workspaces: right-click → Change Icon…": {},
+    "Pick an icon from the set for any pin. Items in a Workbench: right-click → Change Icon…": {
+      "extractionState": "stale"
+    },
+    "Pick an icon from the set for any pin. Pins in spaces: right-click → Change Icon…": {
+      "extractionState": "stale"
+    },
+    "Pick an icon from the set for any pin. Pins in workspaces: right-click → Change Icon…": {
+      "extractionState": "stale"
+    },
+    "Pin in This Space": {
+      "extractionState": "stale"
+    },
+    "Pin in This Workspace": {},
+    "Pin to Sidebar": {},
+    "Pin to Top": {},
+    "Pinboard": {
+      "extractionState": "stale"
+    },
+    "Pinned websites (in spaces and Favorites) and the tab you're on are never closed.": {
+      "extractionState": "stale"
+    },
+    "Pinned websites (in workspaces and Favorites) and the tab you're on are never closed.": {
+      "extractionState": "stale"
+    },
+    "Pinwall: your most-used apps and websites, the same in every workspace. Drag apps or tabs here; right-click one for more.": {
+      "extractionState": "stale"
+    },
+    "Quit": {},
+    "Quit proDOCKtivity": {},
+    "Quit the app": {
+      "extractionState": "stale"
+    },
+    "Reach up behind the menu bar": {},
+    "Reading font": {},
+    "Recommended": {},
+    "Release Freeze": {},
+    "Release Page": {},
+    "Remove": {},
+    "Remove Folder (keep contents)": {},
+    "Remove exception": {},
+    "Remove from Arc Favorites": {},
+    "Remove from Files Dock": {},
+    "Remove from Pinwall": {
+      "extractionState": "stale"
+    },
+    "Rename…": {},
+    "Reset Appearance to Defaults": {},
+    "Retry": {},
+    "Reverse swipe direction between spaces": {
+      "extractionState": "stale"
+    },
+    "Reverse swipe direction between workspaces": {},
+    "Safari bookmarks": {},
+    "Safari web extensions (inside apps like Zotero) and Chrome or Firefox extensions (a folder, .zip, .xpi or .crx). Their buttons are in the bar behind the puzzle piece. Apple's iCloud Passwords extension can't work here: macOS only lets Safari, Chrome, Edge and Firefox talk to the Passwords app. Copy from the Passwords app and paste with ⌘V instead.": {},
+    "Save Setup File with Apps (setupWA)…": {},
+    "Save Setup File without Apps (setupNA)…": {},
+    "Save idea": {},
+    "Saved": {},
+    "Search apps": {},
+    "Search or enter address": {},
+    "Search with": {},
+    "Settings, spaces, hide sidebar": {
+      "extractionState": "stale"
+    },
+    "Settings…": {},
+    "Setup Guide": {},
+    "Setup Tour…": {},
+    "Setup file": {},
+    "Show / hide sidebar": {
+      "extractionState": "stale"
+    },
+    "Show / hide the bar": {},
+    "Show All Spaces  ⌃⌥W": {
+      "extractionState": "stale"
+    },
+    "Show All Workspaces": {},
+    "Show All Workspaces  ⌃⌥W": {},
+    "Show Backups": {},
+    "Show Crash Reports": {},
+    "Show Getting Started": {},
+    "Show again": {},
+    "Show in Finder": {},
+    "Show in every space": {
+      "extractionState": "stale"
+    },
+    "Show in every workspace": {},
+    "Show setupNA in Finder": {},
+    "Show the bar on": {},
+    "Show the space's color dot": {
+      "extractionState": "stale"
+    },
+    "Show the workspace's color dot": {},
+    "Show/Hide Arc's Sidebar  ⌘S": {},
+    "Sidebar": {
+      "extractionState": "stale"
+    },
+    "Site icons come from Google's icon service, which sees the names of the sites in your bar.": {
+      "extractionState": "stale"
+    },
+    "Site icons come from Google's icon service, which sees the names of the sites in your bar. When Google has none, the icon is fetched from the site itself, once.": {},
+    "Skip for Now": {},
+    "Snap front window now": {},
+    "Snap windows next to sidebar": {},
+    "Snap windows next to the bar": {},
+    "Snap windows next to the sidebar": {
+      "extractionState": "stale"
+    },
+    "Spaces": {
+      "extractionState": "stale"
+    },
+    "Spaces, pins, open tabs, extensions and your ideas are saved on this Mac only. There is no account and no sync.": {
+      "extractionState": "stale"
+    },
+    "Split screen": {},
+    "Spotlight keeps ⌘Space. In DOCKlight, start with & to search the web or / to search your files.": {},
+    "Starts open": {},
+    "Stop below the menu bar": {},
+    "Swap Sides": {},
+    "Swipe with two fingers on the bar, click a workspace icon at the bottom, or open Show All Workspaces to see them side by side and drag things between them.": {},
+    "Switch to this open tab": {},
+    "Switching": {},
+    "Tabs": {},
+    "Text": {},
+    "Text size": {},
+    "The app's first window snaps as usual; only further windows (like a new email) go here.": {},
+    "The bar": {},
+    "The bar always slides the way your fingers swipe. Normally two fingers to the left bring the next space (it slides in from the right). Turn this on for the other way round: two fingers to the right bring the next space (it slides in from the left).": {
+      "extractionState": "stale"
+    },
+    "The bar always slides the way your fingers swipe. Normally two fingers to the left bring the next workspace (it slides in from the right). Turn this on for the other way round: two fingers to the right bring the next workspace (it slides in from the left).": {},
+    "The icons at the top of the bar. A website's tab closes; the Favorite stays.": {},
+    "The one in front goes left, the one you ⌥-clicked right. Clicking something else ends the split: only that shows. To keep one thing on a half while you switch the other, ⌃-click it (frozen on the left; ⌃-click again to release), or right-click → Freeze on the Left / Right.": {},
+    "The one in front goes left, the one you ⌥-clicked right. To keep one thing on a half while you switch the other: right-click it in the bar → Freeze on the Left / Right.": {
+      "extractionState": "stale"
+    },
+    "The other screen": {},
+    "The screen where the mouse is": {},
+    "The space's color as a thin frame around the second screen as well (needs the frame above). The browser window, if set to open there (Settings → Browser), fills the inside. No bar on that screen.": {
+      "extractionState": "stale"
+    },
+    "The workspace's color as a thin frame around the second screen as well (needs the frame above). The browser window, if set to open there (Settings → Browser), fills the inside. No bar on that screen.": {
+      "extractionState": "stale"
+    },
+    "The workspace's color as a thin frame around the second screen as well. The browser window, if set to open there (Browser tab), fills the inside. No bar on that screen.": {},
+    "Theme": {},
+    "Then": {
+      "extractionState": "stale"
+    },
+    "Then links you click in Mail, Slack, WhatsApp and other apps open as a tab in the active space, in the browser chosen above. macOS asks you to confirm once.": {
+      "extractionState": "stale"
+    },
+    "Then links you click in Mail, Slack, WhatsApp and other apps open as a tab in the active workspace, in the browser chosen above. macOS asks you to confirm once.": {},
+    "Tidy up apps I haven't used for a while": {
+      "extractionState": "stale"
+    },
+    "Top Level": {},
+    "Tuck Arc's own sidebar behind this bar": {},
+    "Two things side by side": {},
+    "Type an address or search (⌘L)": {},
+    "Unpin": {},
+    "Update": {},
+    "Updates": {},
+    "Updating… proDOCKtivity restarts by itself.": {},
+    "Use original": {},
+    "Version": {},
+    "Website": {},
+    "Websites": {},
+    "Websites in a dock of their own": {},
+    "Websites on the Pinwall and in a Workbench, and the tab you're on, are never closed.": {
+      "extractionState": "stale"
+    },
+    "Websites you open get what any browser sends them; searches go to the search engine you chose under Browser.": {},
+    "What leaves this Mac": {},
+    "What should be better? Anything goes…": {},
+    "What's New": {},
+    "Where each app's windows go": {},
+    "Where your data lives": {},
+    "Windows you open from the bar fill the space beside it, on the bar's screen.": {},
+    "With a second monitor: keep the bar on one screen and let the browser fill the other. If that screen isn't connected, the browser sits beside the bar as usual.": {},
+    "With “only in the space”, an app belongs to the space that was open when you started it, and the space lists its open apps and tabs together. Drag an app onto another space's icon to move it there. Windows aren't hidden when you switch.": {
+      "extractionState": "stale"
+    },
+    "With “only in the workspace”, an app belongs to the workspace that was open when you started it, and the Open area lists its apps and tabs together. Drag an app onto another workspace's icon to move it there. Windows aren't hidden when you switch.": {
+      "extractionState": "stale"
+    },
+    "With “only in the workspace”, an app belongs to the workspace that was open when you started it, and the workspace lists its open apps and tabs together. Drag an app onto another workspace's icon to move it there. Windows aren't hidden when you switch.": {},
+    "Workspace ": {},
+    "Workspaces": {},
+    "Workspaces, pins, open tabs, extensions and your ideas are saved on this Mac only. There is no account and no sync.": {},
+    "Write down an idea": {},
+    "Your ideas are only sent when you choose Email in the Ideas menu, from your own mail app.": {},
+    "Your most-used apps and websites. Drag apps or tabs here; right-click one for more.": {},
+    "after ": {},
+    "arrow.clockwise": {},
+    "chevron.left": {},
+    "chevron.right": {},
+    "close after ": {},
+    "e.g. gmail.com": {},
+    "open": {},
+    "save": {}
+  },
+  "version": "1.0"
+}

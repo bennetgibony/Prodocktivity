@@ -1,0 +1,269 @@
+<title>proDOCKtivity Setup Guide</title>
+<style>
+/* Layout: one calm reading column; each setup step is a numbered card because the order matters. */
+:root {
+  --bg: #f6f3fb;
+  --card: #ffffff;
+  --ink: #1f1a2b;
+  --muted: #6d6680;
+  --line: #e6e0f0;
+  --accent: #7b4fd6;
+  --accent-soft: #efe7ff;
+  --warn: #b5541c;
+  --warn-soft: #fff1e6;
+  --font: -apple-system, "SF Pro Text", system-ui, sans-serif;
+  --display: ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17141f; --card: #221e2d; --ink: #f2eefa; --muted: #a79fb8; --line: #352f44;
+  --accent: #b393ff; --accent-soft: #2e2546; --warn: #ffb27d; --warn-soft: #3a2619; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #17141f; --card: #221e2d; --ink: #f2eefa; --muted: #a79fb8; --line: #352f44;
+  --accent: #b393ff; --accent-soft: #2e2546; --warn: #ffb27d; --warn-soft: #3a2619; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.6; margin: 0 }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 18px; padding-block: 36px 64px; display: grid; gap: 28px }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance }
+h1 { font-size: clamp(30px, 6vw, 40px); font-weight: 800 }
+h2 { font-size: 22px; font-weight: 800 }
+h3 { font-size: 17px; font-weight: 700 }
+p { margin: 0 }
+.muted { color: var(--muted) }
+header { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center }
+header img { width: 84px; height: 84px }
+.intro { display: grid; gap: 22px; align-items: start }
+.intro img { width: 150px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.18) }
+@media (max-width: 560px) { .intro { grid-template-columns: 1fr } .intro img { justify-self: center } }
+.needs { display: grid; gap: 6px; padding: 16px 18px; border-radius: 14px; background: var(--accent-soft) }
+.needs ul { margin: 0; padding-left: 20px }
+ol.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: s }
+ol.steps > li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 18px 64px; position: relative; display: grid; gap: 8px }
+ol.steps > li::before { content: counter(s); position: absolute; left: 18px; top: 16px; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-family: var(--display); font-weight: 800; display: grid; place-items: center }
+ol.steps ol, ol.steps ul { margin: 0; padding-left: 20px; display: grid; gap: 4px }
+.note { background: var(--warn-soft); color: var(--ink); border-radius: 12px; padding: 10px 14px; font-size: 15px }
+.note b { color: var(--warn) }
+kbd { font-family: var(--font); font-size: 14px; background: var(--accent-soft); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 7px; white-space: nowrap }
+.ui { font-weight: 600 }
+table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden }
+td { padding: 11px 14px; border-top: 1px solid var(--line); vertical-align: top }
+tr:first-child td { border-top: none }
+td:first-child { width: 42%; white-space: nowrap }
+.tablewrap { overflow-x: auto }
+.help { display: grid; gap: 10px }
+.help div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 4px }
+</style>
+
+<div class="wrap">
+  <header>
+    <img src="__ICON__" alt="proDOCKtivity icon: a glowing glass Dock">
+    <div>
+      <h1>Setting up proDOCKtivity</h1>
+      <p class="muted">About 5 minutes. No tech knowledge needed. Just follow the steps in order.</p>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div style="display:grid; gap:10px">
+      <h2>What is it?</h2>
+      <p>proDOCKtivity is a bar on the left side of your screen. It keeps your apps, websites and folders in one tidy place, sorted into “workspaces” (for example Uni, Work, Free time). Click something and it opens right next to the bar.</p>
+      <div class="needs">
+        <strong>You need</strong>
+        <ul>
+          <li>A Mac with an Apple chip (M1 or newer). To check: Apple menu (top left) → About This Mac → “Chip”.</li>
+          <li>macOS 27 or newer.</li>
+          <li>No extra browser needed: websites open in proDOCKtivity's own browser window. If you prefer, you can use <b>Google Chrome</b> or <b>Arc</b> instead (see “Choosing a browser” below).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <figure style="margin:0; display:grid; gap:6px">
+    <img src="__SHOT__" alt="Some of the built-in icons you can give your pins: Mail, Chat, Calls, People, News, Calendar, To-dos" style="width:100%; border-radius:14px; border:1px solid var(--line)">
+    <figcaption class="muted" style="font-size:14px">A few of the 42 built-in icons you can give your pins (right-click a pin → Change Icon…).</figcaption>
+  </figure>
+
+  <section style="display:grid; gap:14px">
+    <h2>Install</h2>
+    <ol class="steps">
+      <li>
+        <h3>Unpack the file</h3>
+        <p>You got a file called <span class="ui">proDOCKtivity.zip</span>. Double-click it. A <span class="ui">proDOCKtivity</span> app appears next to it.</p>
+      </li>
+      <li>
+        <h3>Move it into “Applications”</h3>
+        <p>Open a new Finder window, click <span class="ui">Applications</span> on the left, and drag <span class="ui">proDOCKtivity</span> into it.</p>
+      </li>
+      <li>
+        <h3>Open it the first time</h3>
+        <p>Double-click <span class="ui">proDOCKtivity</span> in Applications. macOS shows a message that it can't check the app. That's normal, because the app isn't from the App Store. Click <span class="ui">Done</span>.</p>
+        <ol>
+          <li>Open the Apple menu (top left) → <span class="ui">System Settings</span> → <span class="ui">Privacy &amp; Security</span>.</li>
+          <li>Scroll down to <span class="ui">Security</span>. Next to “proDOCKtivity was blocked…”, click <span class="ui">Open Anyway</span>.</li>
+          <li>Enter your Mac password, then click <span class="ui">Open Anyway</span> once more.</li>
+        </ol>
+        <p class="note"><b>Only once.</b> After this, proDOCKtivity opens normally.</p>
+      </li>
+      <li>
+        <h3>The setup tour (about a minute)</h3>
+        <p>On the first start a small window offers three ways to set up:</p>
+        <ul>
+          <li><b>Quick setup</b> (recommended): good settings and three workspaces, Uni, Work and Free time. One click.</li>
+          <li><b>Step by step</b>: four short questions: which browser, your workspaces (or bring them over from Arc, Chrome or Safari bookmarks), how windows behave, and two permissions.</li>
+          <li><b>From a setup file</b>: a <i>setupWA</i> or <i>setupNA</i> file from another Mac or a friend (see “Another Mac, backups” below).</li>
+        </ul>
+        <p class="note">Everything can be changed later in Settings. To run the tour again: ⋯ (bottom left of the bar) → <span class="ui">Setup Tour…</span></p>
+      </li>
+    </ol>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Allow what it needs</h2>
+    <ol class="steps" style="counter-reset: s 4">
+      <li>
+        <h3>Accessibility (to place windows next to the bar)</h3>
+        <ol>
+          <li>In the setup tour, click <span class="ui">Allow…</span> next to “Snap windows next to the bar”. Or, in the bar, click <span class="ui">Open Accessibility Settings…</span> on the card “Snap windows next to the bar”. If a message “proDOCKtivity would like to control this computer” appears, click <span class="ui">Open System Settings</span>.</li>
+          <li>In the list, switch <span class="ui">proDOCKtivity</span> on. If it's not in the list: click <span class="ui">+</span>, choose <span class="ui">Applications</span> → <span class="ui">proDOCKtivity</span> → <span class="ui">Open</span>, then switch it on.</li>
+          <li>Enter your Mac password if asked.</li>
+        </ol>
+      </li>
+      <li>
+        <h3>Chrome or Arc (only if you use one of them)</h3>
+        <p>When a message says “proDOCKtivity wants to control Google Chrome” (or Arc), click <span class="ui">Allow</span>. If you clicked “Don't Allow” by mistake: System Settings → Privacy &amp; Security → <span class="ui">Automation</span> → proDOCKtivity → switch on <span class="ui">Google Chrome</span> or <span class="ui">Arc</span>.</p>
+      </li>
+      <li>
+        <h3>Downloads (optional)</h3>
+        <p>If asked whether proDOCKtivity may access your Downloads folder, click <span class="ui">Allow</span>. Then the ↓ button at the bottom of the bar shows your recent downloads.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Using it</h2>
+    <p>Your workspaces sit as icons at the bottom of the bar; click one, or swipe with two fingers on the bar, to switch. At the top are your <b>Favorites</b> (apps and websites you use everywhere), below them the workspace's own pinned apps, websites and folders, then what's open right now. To tidy up, press <kbd>⌃ control</kbd> <kbd>⌥ option</kbd> <kbd>W</kbd> (<b>Show All Workspaces</b>): every workspace side by side, drag things from one to another. Right-click anything in the bar to see what you can do with it. Drag things to sort them.</p>
+    <div class="tablewrap">
+      <table>
+        <tr><td>Show or hide the bar</td><td><kbd>⌃ control</kbd> <kbd>⌥ option</kbd> <kbd>S</kbd>, or the bar icon in the menu bar at the top right</td></tr>
+        <tr><td>Bring back what you just closed</td><td><kbd>⌘ command</kbd> <kbd>Y</kbd> in the bar or the browser, <kbd>⌃ control</kbd> <kbd>⌥ option</kbd> <kbd>Y</kbd> from any app: the last closed tab, the last app that quit, or a deleted workspace, again and again. <kbd>⌘ command</kbd> <kbd>Z</kbd> stays the normal Undo</td></tr>
+        <tr><td>Two things side by side</td><td>Hold <kbd>⌥ option</kbd> and click an app or website. Clicking something else ends the split: only that shows</td></tr>
+        <tr><td>Keep one thing on the left half (freeze)</td><td>Hold <kbd>⌃ control</kbd> and click it; again to release</td></tr>
+        <tr><td>Search everything (“DOCKlight”)</td><td><kbd>⌥ option</kbd> <kbd>Space</kbd> (or <kbd>⌃ control</kbd> <kbd>⌥ option</kbd> <kbd>Space</kbd>). Spotlight stays on <kbd>⌘ command</kbd> <kbd>Space</kbd>. Start with <kbd>&amp;</kbd> to search the web, or <kbd>/</kbd> to search your files</td></tr>
+        <tr><td>Write down an idea for Bennet</td><td><kbd>⌃ control</kbd> <kbd>⌥ option</kbd> <kbd>I</kbd>, type it, then <kbd>⌘ command</kbd> <kbd>⏎ return</kbd></td></tr>
+        <tr><td>Settings</td><td>The small ⚙ button at the bottom left of the bar, or <kbd>⌘,</kbd> (see “Settings at a glance” below)</td></tr>
+        <tr><td>Workspaces, import, ideas, setup tour</td><td>The ⋯ button next to it</td></tr>
+        <tr><td>A workspace's name, icon, color</td><td>Right-click its icon at the bottom of the bar → <span class="ui">Rename…</span> or <span class="ui">Change Icon…</span>; colors in Settings → <span class="ui">Workspaces</span></td></tr>
+        <tr><td>Delete a workspace</td><td>Right-click its icon → <span class="ui">Delete Workspace</span>. It goes at once; the note at the bottom (or <kbd>⌘</kbd> <kbd>Y</kbd>) brings it back with its tabs</td></tr>
+        <tr><td>Every shortcut in one list</td><td>Settings → <span class="ui">Shortcuts</span></td></tr>
+        <tr><td>Which screen the bar is on</td><td>Settings → General → <span class="ui">Show the bar on</span>: the main screen, one particular screen, or the screen where the mouse is</td></tr>
+        <tr><td>Red dot on an icon</td><td>That app has new notifications (as in the Dock), or a website shows a number in its title, like Gmail's “(3)”</td></tr>
+        <tr><td>See the Getting started list again</td><td>⋯ → <span class="ui">Show Getting Started</span></td></tr>
+      </table>
+    </div>
+    <div class="needs" style="background: var(--card); border: 1px solid var(--line)">
+      <strong>If <kbd>⌥ option</kbd> <kbd>Space</kbd> opens Spotlight instead of DOCKlight</strong>
+      <ol style="margin:0; padding-left:20px">
+        <li>Apple menu (top left) → System Settings → <span class="ui">Keyboard</span> → <span class="ui">Keyboard Shortcuts…</span> → <span class="ui">Spotlight</span>.</li>
+        <li>Click the shortcut next to “Show Spotlight search” and press <kbd>⌘ command</kbd> <kbd>Space</kbd>. Click Done.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Windows next to the bar</h2>
+    <p>Apps and websites you open from the bar fill the space next to it (this needs Accessibility, step 5).</p>
+    <h3>The frame: everything in one window</h3>
+    <p>Like Arc, everything looks like one window: your workspace's color sits behind everything, with a thin frame around the bar and your windows, all in one piece. Every window snaps inside the frame, also new ones and ones you bring forward; a smaller window that's already inside stays as it is. Free to break out: apps set to “Don't snap” (Finder, Terminal), full-screen apps and windows that can't be resized. Where your screen meets a second monitor there's no frame. In <span class="ui">Settings → Windows → Frame</span> you set the width, turn it off, and choose whether it stops below the menu bar (rounded top corners) or reaches up behind it.</p>
+    <h3>Docks: websites and files next to the bar</h3>
+    <p>In <span class="ui">Settings → Bar &amp; Docks → Docks</span>: <b>Websites in a dock of their own</b> puts the workspace's websites and tabs in a second bar right of the bar; the bar keeps your favorites and apps. The <b>Files dock</b> (left next to the bar, or at the right screen edge) is a small Finder: add folders with <span class="ui">+</span>, click a file to open it, drag files into Mail or an upload. Right-click a folder → <span class="ui">Starts open</span> to have it open from the start.</p>
+    <h3>Freeze one thing on one half</h3>
+    <p>Hold <kbd>⌃ control</kbd> and click an app or a website (it goes to the left half), or right-click it → <span class="ui">Freeze on the Left</span> or <span class="ui">Freeze on the Right</span>. It stays on that half (it gets a small blue snowflake), and everything you open after it goes to the other half. Example: freeze your calendar on the right, then click through your tabs, and they all show on the left. To stop, <kbd>⌃ control</kbd>-click it again, or right-click → <span class="ui">Release Freeze</span>. (A split with <kbd>⌥ option</kbd> is different: it ends as soon as you click something else.)</p>
+    <h3>Where an app's new windows go</h3>
+    <p>Right-click an app → <span class="ui">New Windows</span>: fill the space, right half, left half, small in the middle, or don't snap. With <span class="ui">Only extra windows</span>, the app's main window stays as it is and only further windows follow the rule. Already set up: Finder and Terminal don't snap; in Mail, a new email opens on the right half next to your inbox. All of these rules are listed in Settings → <span class="ui">Windows</span> → <span class="ui">Where each app's windows go</span>, where you can also add an app or set one back.</p>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Tidying up automatically</h2>
+    <p>Settings → <span class="ui">Auto-Quit</span>. Under <span class="ui">Open apps and tabs</span> choose after how long apps you haven't used are hidden or quit (for example 30 minutes) and when old tabs close. <span class="ui">Favorites</span> and every workspace can have their own rule: keep their apps open, hide or quit them after another time, and close their tabs sooner, later or never. Then add exceptions that win wherever they are: <span class="ui">Add App Exception…</span> lists all your apps, and under <span class="ui">Exceptions for websites</span> you type a site such as gmail.com so its tabs are never closed. The app you're using, apps in a call and pinned websites in a workspace are never touched; <kbd>⌘</kbd> <kbd>Y</kbd> brings back what was closed.</p>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>The built-in browser</h2>
+    <p>Click a website in the bar and it opens in proDOCKtivity's own browser window, right next to the bar. Each workspace keeps its own open tabs. Like in Arc, the window is just the page: the address, back, forward and reload sit at the top of the bar (back and forward only show when there's somewhere to go), and the red/yellow/green buttons sit in a small notch in the page's top-left corner. The red button only hides the window; your tabs stay open and come back when you click a website again.</p>
+    <p>The address is in the bar's top-left corner: click it or press <kbd>⌘</kbd> <kbd>L</kbd>, type, press Enter. (If you'd rather have it in the menu bar after the menus: Settings → <span class="ui">Browser</span>.) Searching in DOCKlight only switches to a tab of the workspace you're in; a site that's open in another workspace opens here instead. Copy, paste, select all, undo, find (<kbd>⌘</kbd> <kbd>F</kbd>) work as in any browser. <b>Two tabs side by side</b>: while the browser is in front, <kbd>⌥ option</kbd>-click another tab; the one you were on goes left, the new one right.</p>
+    <div class="tablewrap">
+      <table>
+        <tr><td>Type an address or search</td><td><kbd>⌘ command</kbd> <kbd>L</kbd></td></tr>
+        <tr><td>New tab</td><td><kbd>⌘ command</kbd> <kbd>T</kbd> (opens DOCKlight)</td></tr>
+        <tr><td>Close tab</td><td><kbd>⌘ command</kbd> <kbd>W</kbd>, or the × next to the tab in the bar</td></tr>
+        <tr><td>Back / forward / reload</td><td><kbd>⌘</kbd> <kbd>[</kbd> &nbsp; <kbd>⌘</kbd> <kbd>]</kbd> &nbsp; <kbd>⌘</kbd> <kbd>R</kbd></td></tr>
+        <tr><td>Bigger / smaller page (remembered per site)</td><td><kbd>⌘</kbd> <kbd>+</kbd> &nbsp; <kbd>⌘</kbd> <kbd>−</kbd> &nbsp; (<kbd>⌘</kbd> <kbd>0</kbd> resets)</td></tr>
+        <tr><td>Reopen the last closed tab</td><td><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>T</kbd></td></tr>
+        <tr><td>Next / previous tab</td><td><kbd>⌃</kbd> <kbd>Tab</kbd> &nbsp; <kbd>⌃</kbd> <kbd>⇧</kbd> <kbd>Tab</kbd> &nbsp; (or <kbd>⌘</kbd> <kbd>⌥</kbd> <kbd>→</kbd> / <kbd>←</kbd>)</td></tr>
+        <tr><td>Jump to a tab</td><td><kbd>⌘</kbd> <kbd>1</kbd> … <kbd>⌘</kbd> <kbd>8</kbd>, <kbd>⌘</kbd> <kbd>9</kbd> for the last</td></tr>
+        <tr><td>Find on the page</td><td><kbd>⌘</kbd> <kbd>F</kbd></td></tr>
+        <tr><td>Copy the page's address</td><td><kbd>⌘</kbd> <kbd>⌥</kbd> <kbd>C</kbd></td></tr>
+        <tr><td>New private tab (nothing is remembered)</td><td><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd></td></tr>
+        <tr><td>Bring back the last closed tab, app or workspace</td><td><kbd>⌘</kbd> <kbd>Y</kbd></td></tr>
+        <tr><td>Settings</td><td><kbd>⌘</kbd> <kbd>,</kbd></td></tr>
+      </table>
+    </div>
+    <h3>Profiles: who is logged in where</h3>
+    <p>Logins (Gmail, Instagram, your uni account …) are stored in a <b>profile</b>. Each workspace uses one profile, and several workspaces can share one. Example: a “Private” profile for both “Free time” and “Uni”, and a “Work” profile just for “Work”. Then you're logged in to your private accounts in two workspaces, and to your work accounts only in one.</p>
+    <ol>
+      <li>Right-click a workspace icon at the bottom of the bar → <span class="ui">Profile: …</span></li>
+      <li>Pick an existing profile, or choose <span class="ui">New Profile…</span> and give it a name.</li>
+      <li>Log in to your websites once in that workspace. Every workspace with the same profile is then logged in too.</li>
+    </ol>
+    <p class="note">At the start there is one profile, “Private”, used by every workspace. In the same menu you can also rename a profile, sign out of everything in it, or delete it.</p>
+    <h3>Links from other apps (default browser)</h3>
+    <p>So that links you click in Mail, Slack, WhatsApp and other apps open in proDOCKtivity too: Settings → <span class="ui">Browser</span> → <span class="ui">Make proDOCKtivity the Default Browser</span>, then confirm with <span class="ui">Use proDOCKtivity</span>. Links then open as a tab in the workspace you're in.</p>
+    <h3>Extensions (ad blocker, Zotero …)</h3>
+    <p>Settings → <span class="ui">Browser</span> → <span class="ui">Extensions</span>. <span class="ui">Get uBlock Origin Lite</span> adds the ad and tracker blocker with one click. <span class="ui">Found on this Mac</span> lists extensions you can take over, for example the <b>Zotero Connector</b> from the Zotero app, or extensions you have in Chrome or Arc. <span class="ui">Add from File…</span> takes a folder, .zip, .xpi or .crx. Each extension has a switch and a trash can. Their buttons (for example Zotero's “Save to Zotero”) are behind the puzzle piece <span class="ui">🧩</span> next to reload at the top of the bar.</p>
+    <h3>Passwords</h3>
+    <p>Apple's Passwords app can't fill in logins here: macOS only lets Safari, Chrome, Edge and Firefox talk to it. Open the Passwords app, copy the password (right-click → <span class="ui">Copy Password</span>), click into the website's password field and paste with <kbd>⌘</kbd> <kbd>V</kbd>. You usually only need to do this once per profile, because logins are remembered.</p>
+    <h3>Search engine</h3>
+    <p>What you type that isn't an address is searched with Google. To use DuckDuckGo, Ecosia, Bing or Startpage instead: Settings → <span class="ui">Browser</span> → <span class="ui">Search with</span>.</p>
+    <h3>Choosing a browser</h3>
+    <p>⋯ (bottom left of the bar) → <span class="ui">Browser</span> (or Settings → <span class="ui">Browser</span>). <b>Built-in</b> is the default. Pick <b>Google Chrome</b> if you need an extension that doesn't work here (for example Claude in Chrome or Apple's Passwords autofill); websites then open in Chrome, using Chrome's own logins (profiles don't apply there). <b>Arc</b> works as well.</p>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Settings at a glance</h2>
+    <p>The ⚙ button at the bottom left of the bar, or <kbd>⌘</kbd> <kbd>,</kbd>. One tab per subject:</p>
+    <div class="tablewrap">
+      <table>
+        <tr><td>General</td><td>Which screen the bar is on, updates, how often you're asked for feedback, the setup tour and this guide</td></tr>
+        <tr><td>Appearance</td><td>Light or dark, accent color, text size, reading font, density, how strongly the bar takes the workspace's color</td></tr>
+        <tr><td>Workspaces</td><td>Each workspace's icon, color and accent; whether open apps show in every workspace or only in the one they were opened in; swipe direction</td></tr>
+        <tr><td>Bar &amp; Docks</td><td>Bar width, size and icons of your Favorites, the website and files docks, apps you hid from the bar</td></tr>
+        <tr><td>Windows</td><td>Snapping next to the bar, the frame, where each app's windows go, split screen</td></tr>
+        <tr><td>Browser</td><td>Which browser, search engine, default browser, extensions</td></tr>
+        <tr><td>Auto-Quit</td><td>Hiding or quitting unused apps and closing old tabs, per area (see above)</td></tr>
+        <tr><td>Shortcuts</td><td>Every shortcut in one list</td></tr>
+        <tr><td>Data</td><td>Where your data is, backups, crash reports, setup files, export</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Another Mac, backups, updates</h2>
+    <p><b>Setup files</b> set up proDOCKtivity on another Mac in one go. <i>setupNA</i> (settings, workspaces and websites, no apps) is saved by itself after every change; <i>setupWA</i> also holds your apps and their rules. Settings → <span class="ui">Data</span> → <span class="ui">Setup file</span> saves or loads them; logins, open tabs and ideas are never in them.</p>
+    <p><b>Backups</b>: a copy of your data is made every day and kept for two weeks (Settings → <span class="ui">Data</span> → <span class="ui">Backups</span>). Nothing leaves your Mac: no account, no sync.</p>
+    <p><b>Updates</b>: when a new version is out, a card at the bottom of the bar offers to update, and proDOCKtivity restarts by itself (Settings → <span class="ui">General</span> → <span class="ui">Updates</span>).</p>
+  </section>
+
+  <section style="display:grid; gap:14px">
+    <h2>Sending your ideas to Bennet</h2>
+    <p>Everything you note with <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>I</kbd> is collected in one text file. To send it: ⋯ (bottom left of the bar) → <span class="ui">Ideas &amp; Wishes</span> → <span class="ui">Email Ideas to Bennet…</span>. Mail opens with the file attached. Or choose <span class="ui">Export Ideas File…</span> and send it however you like.</p>
+  </section>
+
+  <section class="help">
+    <h2>If something doesn't work</h2>
+    <div><h3>Windows don't move next to the bar</h3><p>Accessibility isn't switched on. Do step 5 again. If proDOCKtivity is already in the list, switch it off and on again.</p></div>
+    <div><h3>A website says I'm logged out</h3><p>Logins belong to the workspace's profile. Right-click the workspace icon → <span class="ui">Profile</span> and check that it's the profile you logged in with, or log in once more in this workspace.</p></div>
+    <div><h3>My Chrome or Arc tabs don't show up</h3><p>Open that browser once. Then check step 6 (Automation → Google Chrome or Arc).</p></div>
+    <div><h3>The bar is gone</h3><p>Press <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>S</kbd>. If that doesn't help, open proDOCKtivity again from Applications.</p></div>
+    <div><h3>I want to quit it</h3><p>Click the bar icon in the menu bar at the top right → <span class="ui">Quit proDOCKtivity</span>.</p></div>
+  </section>
+</div>
