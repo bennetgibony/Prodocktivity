@@ -28,7 +28,9 @@ fi
 
 # Privacy check: only the feedback address may mention you.
 ME="$(id -un)"
-FOUND="$(LC_ALL=C grep -r -a -o -i -e "/Users/[A-Za-z0-9._-]*" -e "[[:alnum:]._-]*${ME}[[:alnum:]@._-]*" "$APP" | grep -v -i -x ".*:prodocktivity@bennet-gibony.com" | sort -u || true)"
+# The update repository's owner (PDUpdateRepository, e.g. "owner/prodocktivity") is public on purpose.
+OWNER="$(/usr/libexec/PlistBuddy -c 'Print :PDUpdateRepository' "$APP/Contents/Info.plist" 2>/dev/null | cut -d/ -f1)"
+FOUND="$(LC_ALL=C grep -r -a -o -i -e "/Users/[A-Za-z0-9._-]*" -e "[[:alnum:]._-]*${ME}[[:alnum:]@._-]*" "$APP" | grep -v -i -x ".*:prodocktivity@bennet-gibony.com" | grep -v -x ".*/Info.plist:${OWNER:-__none__}" | sort -u || true)"
 if [[ -n "$FOUND" ]]; then
   echo "Personal data found in the app, not packaging:"; echo "$FOUND"; exit 1
 fi
